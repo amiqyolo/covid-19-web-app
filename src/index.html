@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 App</title>
+
+</head>
+<body class="bg-light text-center">
+
+    <!-- HEADER -->
+    <header class="container py-4">
+        <h1 class="fw-normal">Covid 19 Statistics</h1>
+        <p class="fs-5 lead text-muted">Data source by Covid19-API.com</p>
+    </header>
+
+    <!-- Content here -->
+    <main class="col py-4 container">      
+
+        <!-- SEARCH BAR -->
+        <section class="col mb-5">
+            <h3 class="fw-normal">Search for Country's Update</h3>
+
+            <select-component></select-component>
+            <search-bar></search-bar>
+        </section>
+
+        <section class="col-12 mb-5 mx-auto">
+            <h3 class="fw-normal">Country's</h3>
+        </section>
+
+        <global-component id="country"></global-component>
+
+        <section class="col-12 mb-5 mx-auto">
+            <h3 class="fw-normal">Global Summary Cases</h3>
+        </section>
+        
+        <global-component id="global"></global-component>
+        
+    </main>
+
+    <footer class="mt-auto text-black-50">
+        <p>Cover template for <a href="https://getbootstrap.com/" class="text-black">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-black">@mdo</a>.</p>
+    </footer>
+</body>
+</html>
